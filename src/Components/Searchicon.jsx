@@ -1,7 +1,7 @@
 export const SearchIcon = ({ onClick }) => {
   return (
     <svg
-      className="lg:absolute lg:left-[8px] lg:w-[18px] lg:h-[18px] w-[23px] h-[23px] cursor-pointer"
+      className="w-[23px] h-[23px] cursor-pointer"
       viewBox="0 0 28 28"
       fill="currentColor"
       onClick={onClick}

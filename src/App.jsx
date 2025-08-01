@@ -1,8 +1,11 @@
 import React from 'react'
+import Navbar from './Components/Navbar.jsx'
 
 function App() {
   return (
-    <div><h1 className='bg-amber-700'>My YouTube Project</h1></div>
+    <div>
+      <Navbar />
+    </div>
   )
 }
 
