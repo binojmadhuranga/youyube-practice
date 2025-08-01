@@ -2,7 +2,7 @@ import React from 'react'
 
 function App() {
   return (
-    <div>App</div>
+    <div><h1 className='bg-amber-700'>My YouTube Project</h1></div>
   )
 }
 
