@@ -7,13 +7,13 @@ import { SearchIcon } from './Searchicon';
 
 function Navbar() {
     return (
-        <div className="px-4 mt-5 flex justify-between">
+        <div className="px-4 mt-5 flex justify-between w-[100vw]">
             <img
                 src={Logo}
                 alt="Logo"
-                className="w-[100px] h-[30px] cursor-pointer object-contain"
+                className="w-[100px] h-[10%] cursor-pointer object-contain"
             />
-            <div className="flex items-center space-x-6">
+            <div className="flex items-center space-x-6 w-[30%] justify-between">
                 <SearchIcon />
                 <CartIcon />
                 <BurgerIcon />
