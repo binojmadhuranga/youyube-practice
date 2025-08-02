@@ -4,11 +4,13 @@ import { BurgerIcon } from './BurgerIcon';
 import { CartIcon } from './CartIcon';
 import { SearchIcon } from './Searchicon';
 import CardSlider from './CardSlider';
+import Searchbar from './Searchbar';
 
 
 
 function Navbar() {
    const [isOpen, setIsOpen] = useState(false);
+   const [isSearchbarOpen, setSearchBar] = useState(false);
 
 
     return (
@@ -20,13 +22,14 @@ function Navbar() {
                     className="w-[100px] h-[10%] cursor-pointer object-contain"
                 />
                 <div className="flex items-center space-x-6 w-[30%] justify-end">
-                    <SearchIcon />
+                    <SearchIcon onClick={() => setSearchBar(true)} />
                     <CartIcon onClick={() => setIsOpen(true)} />
                     <BurgerIcon />
 
                 </div>
             </div>
             <CardSlider isOpen={isOpen} handleClose={() => setIsOpen(false)} />
+            <Searchbar isOpen={isSearchbarOpen} handleClose={() => setSearchBar(false)} />
         </>
     );
 }
