@@ -11,7 +11,7 @@ function Navbar() {
             <img
                 src={Logo}
                 alt="Logo"
-                className="w-[88px] h-[20px] cursor-pointer object-contain"
+                className="w-[100px] h-[30px] cursor-pointer object-contain"
             />
             <div className="flex items-center space-x-6">
                 <SearchIcon />
