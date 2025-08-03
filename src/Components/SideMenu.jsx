@@ -5,6 +5,7 @@ import Item from './Item';
 import { InstagramIcon } from './InstagramIcon';
 import { TiktokIcon } from './TiktokIcon';
 import { YoutubeIcon } from './YoutubeIcon';
+import { UserIcon } from './UserIcon';
 
 function SideMenu({ isOpen, handleClose }) {
     return (
@@ -26,8 +27,8 @@ function SideMenu({ isOpen, handleClose }) {
 
                             ))
                         }
-                        <Item name={"Account"}/>
-                        <div className='flex items-center gap-2'>
+                        <Item name= "Account" noBorder={true} leftIcon={<UserIcon/>} />
+                        <div className='flex items-center gap-4 mt-3'>
                             <InstagramIcon/>
                             <TiktokIcon/>
                             <YoutubeIcon/>
