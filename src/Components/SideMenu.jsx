@@ -1,3 +1,4 @@
+import { sub } from 'motion/react-client';
 import Logo from '../assets/logo.avif';
 import { CloseIcon } from './CloseIcon';
 
@@ -10,7 +11,9 @@ function SideMenu({ isOpen, handleClose }) {
                         <img src={Logo} alt="logo" className='h-[20px] w-[80px] ' />
                         <CloseIcon onClick={handleClose} />
                     </div>
+                    <div className='flex flex-col items-start justify-start h-[90vh] mt-2.5 px-4'>
 
+                    </div>
 
 
                 </div>
@@ -21,3 +24,26 @@ function SideMenu({ isOpen, handleClose }) {
 }
 
 export default SideMenu
+
+const items = [
+    {
+        name: "12 days of Christmas"
+       
+    },
+    {
+        name: "Men",
+        subItem: ["T-Shirts", "Shirts", "Pants", "Shorts", "Jackets"]
+    },
+    {
+        name: "Women",
+        subItem: ["Tops", "Dresses", "Skirts", "Jeans", "Jackets"]
+    },
+    {
+        name: "Accessories",
+        subItem: ["Bags", "Hats", "Belts", "Watches", "Sunglasses"]
+    },
+    {
+        name: "Gift Item",
+        subItem: ["Mugs", "Keychains", "Stickers"]
+    }
+];
