@@ -25,7 +25,7 @@ function Navbar() {
                 <div className="flex items-center space-x-6 w-[30%] justify-end">
                     <SearchIcon onClick={() => setSearchBar(true)} />
                     <CartIcon onClick={() => setIsOpen(true)} />
-                    <BurgerIcon />
+                    <BurgerIcon onClick={() => setSideMenu(true)} />
 
                 </div>
             </div>
