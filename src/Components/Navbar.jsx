@@ -5,13 +5,14 @@ import { CartIcon } from './CartIcon';
 import { SearchIcon } from './Searchicon';
 import CardSlider from './CardSlider';
 import Searchbar from './Searchbar';
+import SideMenu from './SideMenu';
 
 
 
 function Navbar() {
-   const [isOpen, setIsOpen] = useState(false);
-   const [isSearchbarOpen, setSearchBar] = useState(false);
-
+    const [isOpen, setIsOpen] = useState(false);
+    const [isSearchbarOpen, setSearchBar] = useState(false);
+    const [isSideMenuOpen, setSideMenu] = useState(false);
 
     return (
         <>
@@ -30,6 +31,7 @@ function Navbar() {
             </div>
             <CardSlider isOpen={isOpen} handleClose={() => setIsOpen(false)} />
             <Searchbar isOpen={isSearchbarOpen} handleClose={() => setSearchBar(false)} />
+            <SideMenu isOpen={isSideMenuOpen} handleClose={() => setSideMenu(false)} />
         </>
     );
 }
